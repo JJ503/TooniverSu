@@ -1,0 +1,247 @@
+div.j_main{
+	margin: 2% 25%;
+	width: 50%
+}
+
+/*선택*/
+#j_kind{
+	float: left;
+}
+#j_kind li {
+	display : inline-block;	 /*1 새 줄로 넘어가지 않게 */
+	list-style-type : none; 	/* 마커 삭제 */
+	padding-right: 4px;
+}
+a.j_other {
+	text-decoration : none; /* 링크 보이지 않게 */
+}
+img.j_gfm{
+	width: 13px;
+	height: 16px;
+	padding-right: 100px;
+}
+a.j_finish{
+	color: #E94848;
+}
+li.j_kind{
+	color: #BDBDBD;
+}
+
+/*종류 버튼*/
+p.j_sort_bt{
+	display: table-cell;
+	vertical-align: middle;
+	background: #BDBDBD;
+	width: 42px;
+	height: 42px;
+	font-size: 18px;
+	border-radius: 50px;
+	text-align: center;
+}
+p.j_b{
+	display: table-cell;
+	background: white;
+	width: 20px;
+	height: 20px;
+}
+a.j_sort_bt{
+	color: white;
+	text-decoration: none;
+}
+div.j_sort{
+	float: center;
+	margin-left: 450px;
+	margin-top: 3%
+}
+
+/*장르*/
+p.j_genre{
+	float: right;
+}
+span.j_genre{
+	color: #E94848;
+}
+
+/*웹툰*/
+a.j_toon{
+	color: black;
+	text-decoration: none;
+}
+a.j_toon:hover{
+	text-decoration: underline;
+}
+img.j_toon{
+	width: 150px;
+	height: 100px;
+	padding: 0px 9px 3px 0px;
+}
+img.j_fin_toon{
+	width: 955px;
+	height: 480px;
+	padding: 0px 6px 3px 0px;
+}
+img.j_fin_toon_1{
+	width: 950px;
+	height: 150px;
+	padding: 0px 6px 3px 0px;
+}
+img.j_fin_toon_2{
+	width: 950px;
+	height: 300px;
+	padding: 0px 6px 3px 0px;
+}
+img.j_fin_toon_fin{
+	width: 970px;
+	height: 150px;
+	padding: 0px 6px 3px 0px;
+}
+td{
+	font-size: 14.4px;
+}
+td.j_writer{
+	padding: 0px 6px 15px 0px;
+	font-size: 11px;
+}
+
+
+/*가장 밑 광고*/
+img.ad_fin_down{
+	width: 100%;
+	height: 230px;
+}
+div.ad_fin{
+	background-color: #262424;
+	position: absolute;
+	width: 100%
+}
+div.j_ad_menubox{
+	margin-left: 33%;
+}
+p.j_ad_menu{
+	display: inline-block;
+	color: #A4A4A4;
+	border: 2px solid #A4A4A4;
+	margin: 50px 10px 20px 10px;
+	text-align: center;
+	padding: 10px 0px;
+	width: 180px;
+}
+p.j_ad_menu:hover{
+	color: #E94848;
+	border-color: #E94848;
+}
+div.j_bottom_menu{
+	margin-left: 31%;
+}
+a.j_menu_bot{
+	color: #A4A4A4;
+	text-decoration: none;
+	font-size: 12px;
+}
+a.j_menu_bot:hover{
+	text-decoration: underline;
+}
+li.j_menu{
+	color: #6E6E6E;
+	font-size: 10px;
+}
+ul.j_bottom_menu, li{
+	display : inline-block;	 /*1 새 줄로 넘어가지 않게 */
+	list-style-type : none; 	/* 마커 삭제 */
+	padding-right: 17px;
+}
+
+/*카피*/
+p.copyright{
+	color: #A4A4A4;
+	margin-left: 42%;
+	font-size: 12px;
+	padding-bottom: 60px;
+}
+#jssk{
+	text-decoration: none;
+	color: #A4A4A4;
+}
+strong:hover{
+	text-decoration: underline;
+}
+
+/*adise - 년도*/
+div.j_year_ch{
+	line-height: 90%;
+	position: fixed;
+	top: 280px;
+	right: 70px;
+}
+a.j_up{
+	text-decoration: none;
+	color: #A4A4A4;
+	font-size: 25px;
+}
+a.j_ch1{
+	text-decoration: none;
+	color: #A4A4A4;
+	font-size: 35px;
+}
+a.j_ch2{
+	text-decoration: none;
+	color: #A4A4A4;
+	font-size: 35px;
+}
+a.j_ch3{
+	text-decoration: none;
+	color: #A4A4A4;
+	font-size: 35px;
+}
+a.j_ch4{
+	text-decoration: none;
+	color: #A4A4A4;
+	font-size: 35px;
+}
+a.j_ch5{
+	text-decoration: none;
+	color: #A4A4A4;
+	font-size: 35px;
+}
+a.j_ch6{
+	text-decoration: none;
+	color: #A4A4A4;
+	font-size: 35px;
+}
+a.j_down{
+	text-decoration: none;
+	color: #A4A4A4;
+	font-size: 25px;
+}
+
+/*선택*/
+a.j_up:hover{
+	color: #E94848;
+}
+a.j_ch1:hover{
+	color: #E94848;
+	font-size: 15px;
+}
+a.j_ch2:hover{
+	color: #E94848;
+	font-size: 15px;
+}
+a.j_ch3:hover{
+	color: #E94848;
+	font-size: 15px;
+}
+a.j_ch4:hover{
+	color: #E94848;
+	font-size: 15px;
+}
+a.j_ch5:hover{
+	color: #E94848;
+	font-size: 15px;
+}
+a.j_ch6:hover{
+	color: #E94848;
+	font-size: 15px;
+}
+a.j_down:hover{
+	color: #E94848;
+}

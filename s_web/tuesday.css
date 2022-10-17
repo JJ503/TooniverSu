@@ -1,0 +1,196 @@
+body{
+	font-family: 'Gothic A1', sans-serif;
+}
+
+.s_webtoon {
+	width: 150px;
+	height: 100px;
+	padding: 0px 6px 3px 0px;
+}
+#j_ad{
+	width: 310px;
+	height: 320px;
+}
+#writer{
+	padding: 0px 6px 15px 0px;
+	font-size: 12px;
+}
+
+.header{
+	position: absolute; width: 100%; z-index: 9999; top: 0; left: 0;
+}
+/*맨 위 배너 검정색 부분*/
+#s_row{ /*맨 위 배너 색*/
+	height: 36px;
+	width: 100%;
+	background: #262424; 
+}
+#s_row ul { /**/
+	margin : 0;
+	min-width : 100%; /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */
+	padding: 0px;
+}
+#s_row ul li {
+	display : inline-block;
+	list-style: none;
+	font-size: 13px;	
+	padding:7px 3px;		
+}
+#s_row ul li a {
+	color : #696969;
+	text-decoration : none;
+	padding-bottom: 10px;
+}
+#s_row ul li a:hover {
+ 	text-decoration: underline;
+}
+
+#s_right {
+	float: right;
+}
+
+img.s_daum{
+	width: 50px; height: 26px;
+	position: absolute;
+	margin-left: 25%;
+}
+img.s_login{
+	width: 40px; height: 20px;
+}
+img.s_app{
+	width: 30px; height: 25px;
+	margin-right: 450px; 
+}
+.s_plusapp {
+	font-size: 12px;
+	color: #8B8989;
+}
+
+
+/*성인 이미지*/
+img.s_adult{
+	width: 30px; height: 15px; padding: 0px;
+}
+
+.headerr{
+	position: fixed; width: 100%; margin: 0; padding:0; top: 0;
+}
+/*그다음 하얀색 부분*/
+#s_row2{ /*맨 위 배너 색*/
+	background: white;
+	height: 130px;
+	min-width : 100%;
+}
+#s_row2 ul { /**/
+	margin : 0;
+	min-width : 100%; /* 모든 아이템(<li>)을 한 줄에 품을 수 있는 폭 */
+}
+#s_row2 ul li {
+	display : inline-block;
+	font-size: 13px;			
+}
+#s_row2 ul li a {
+	color : #404040;
+	text-decoration : none;
+}
+.s_webtoon2 {
+	width: 165px; height: 30px; padding-top: 60px;
+	float: left;
+}
+.s_search{
+	width: 45px; height: 40px; padding-top: 60px;
+}
+.s_recent {
+	width: 85px; height: 40px; padding-top: 60px;
+}
+.s_menu { /*my, 랭킹*/
+	width: 35px; height: 23px; padding-left: 40px; padding-right: 80px;
+}
+.s_league {
+	width: 73px; height: 23px;
+}
+#s_rank {
+	padding-left: 170px;
+}
+
+/*양옆 여백 25%씩 전체*/
+.s_bodymargin {
+	margin: 0% 25%;
+}
+
+
+hr{
+	position: absolute; width: 100%; left: 0; z-index: 9999;
+}
+
+img.s_rankplus {
+	width: 313px; height: 23px;
+}
+td.s_subject {
+	font-size: 12px; padding-bottom: 0px;
+}
+td.s_title {
+	font-size: 14px; padding-top: 0px;
+}
+td.s_writer {
+	font-size: 10px; padding-top: 0px;
+}
+.s_plus{
+	width: 85px; height: 85px;
+}
+a{
+	text-decoration: none; color: black;
+}
+a.j_toon:hover{
+	text-decoration: underline;
+}
+a.s_red:hover{
+	text-decoration: underline;
+}
+.aa:hover{
+	text-decoration: underline;
+}
+img.s_ad{
+	width: 290px; height: 250px;
+}
+img.s_adad{
+	width: 290px;
+}
+
+.s_red{ /*공지사항 notice부분 코드*/
+	color: red; text-decoration: none; padding-right: 25px;
+}
+td.notice{
+	padding-left: 20px;
+}
+td.s_grey{
+	color: grey; padding-left: 20px;
+}
+img.s_plusplus {
+	width: 55px; height: 15px;
+	float: right;
+}
+td.s_plusplus {
+	width: 450px;
+}
+table.s_fontsize {
+	font-size: 14px;
+}
+
+/*wait.html*/
+img.s_bigphoto{
+	width: 950px; height: 500px;
+}
+
+
+/*wait.html kind의 class*/
+/*div.j_kind{
+	margin: 3% 0%;
+}*/
+
+div.j_top{
+	margin: 3% 0%;
+}
+div.j_top_wait{
+	margin: 4% 0% 3% 0%;
+}

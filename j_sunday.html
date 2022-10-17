@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="j_sunday_css.css">
+	<link rel="stylesheet" type="text/css" href="s_web/tuesday.css">
+	<title>Daum 웹툰</title>
+	<link rel="shortcut icon" href="http://s1.daumcdn.net/photo-section/-cartoon10/favicon/201312/favicon.ico">
+	<script>
+		var i = 0;
+		var picture=["gf01", "gf02", "gf03", "gf04", "gf05"];
+		
+		function j_back1(){
+			i--;
+
+			if(i<=-6)
+				i=-1;
+
+			var url="url(toon/" + picture[5 - Math.abs(i)] + ".png)";
+			document.getElementById('j_bg').style.backgroundImage= url;
+		}
+
+		function j_next1(){
+			i++;
+
+			if(i>=picture.length)
+				i=0;
+
+			var url="url(toon/" + picture[i] + ".png)";
+			document.getElementById('j_bg').style.backgroundImage= url;
+		}
+
+		function changeImage(){		    
+		    i++;
+		    if (i==5)
+		    	i=0;
+
+		    var url="url(toon/" + picture[i] + ".png)";
+		    document.getElementById('j_bg').style.backgroundImage= url;
+
+		    setTimeout("changeImage()",3000);
+		 }
+
+		 function s_adultcheck() {
+			var con_test = confirm("로그인이 필요합니다. 로그인 페이지로 이동하시겠습니까?");
+
+			if(con_test == true){
+				window.open("https://logins.daum.net/accounts/loginform.do?status=-401&url=http%3A%2F%2Fwebtoon.daum.net%2Fwebtoon%2Fview%2Fhomemaker","_self");
+			}
+
+			else if(con_test == false){
+			   window.open("j_sunday.html","_self");
+			}
+		}
+	</script>
+</head>
+
+<body  onload="changeImage()">
+	<div class="s_bodymargin">
+		<div class="header">
+			<nav id="s_row">
+				<a href="https://www.daum.net/?nil_profile=mini&nil_src=daum"><img src="s_web/daum.png" class="s_daum"></a>
+					<div id="s_right">
+						<table>
+							<tr>
+								<td><li><a href="#"><img src="s_web/login.png" class="s_login"></a></li></td>
+								<td><li class="s_plusapp"><a href="#"  class="s_plusapp">더보기&#9662; |</a></li></td>
+								<td><li class="s_plusapp"><a href="#"  class="s_plusapp">웹툰앱</td>
+								<td><img src="s_web/red.png" class="s_app"></a></li></td>
+							</tr>
+						</table>
+					</div>
+			</nav>
+		</div>
+	<div class="headerr">
+		<nav id="s_row2">
+				<li><a href="tuesday.html"><img src="s_web/webtoon.png" class="s_webtoon2"></a></li>
+				<li><a href="http://webtoon.daum.net/ranking"><img src="s_web/rank.png" class="s_menu" id="s_rank"></a></li>
+				<li><a href="http://webtoon.daum.net/league#level=major&sort=recent&genreId=all&pageNo=1"><img src="s_web/league.png" class="s_league"></a></li>
+				<li><a href="http://webtoon.daum.net/my/coupon"><img src="s_web/my.png" class="s_menu"></a></li> 
+				<li><a href="#"><img src="s_web/recent.png" class="s_recent"></a></li>
+				<li><a href="#"><img src="s_web/search.png" class="s_search"></a></li>
+		</nav>
+	</div>
+</div>
+	<br><br><br><br><br><br>
+	<hr>
+
+	<div class="j_main">
+		<div class="j_top">
+			<div id="j_kind"> <!--웹툰 선택-->
+				<li id="j_week"><a href="s_web/tuesday.html" style="text-decoration: underline;" class="j_week"><h2 style="font-size: 14px;">요일</h2></a></li>
+				<li class="j_kind">&#8285;</li>
+				<li><a href="j_finish.html" style="color: black" class="j_other"><h2 style="font-size: 14px;">완결</h2></a></li>
+				<li class="j_kind">&#8285;</li>
+				<li><a href="s_web/wait.html" style="color: black" class="j_other"><h2 style="font-size: 14px;">기다리면무료<img src="toon/gfm.jpg" class="j_gfm"></h2></a></li>
+			</div>
+
+			<div class="j_weekch"> <!--요일-->
+				<p class="j_W"><a href="http://webtoon.daum.net/#day=mon&tab=day" class="j_W">월</a></p>
+				<p class="j_b">&nbsp;</p>
+				<p class="j_W"><a href="s_web/tuesday.html" class="j_W">화</a></p>
+				<p class="j_b">&nbsp;</p>
+				<p class="j_W"><a href="http://webtoon.daum.net/#day=wed&tab=day" class="j_W">수</a></p>
+				<p class="j_b">&nbsp;</p>
+				<p class="j_W"><a href="http://webtoon.daum.net/#day=thu&tab=day" class="j_W">목</a></p>
+				<p class="j_b">&nbsp;</p>
+				<p class="j_W"><a href="http://webtoon.daum.net/#day=fri&tab=day" class="j_W">금</a></p>
+				<p class="j_b">&nbsp;</p>
+				<p class="j_W"><a href="http://webtoon.daum.net/#day=sat&tab=day" class="j_W">토</a></p>
+				<p class="j_b">&nbsp;</p>
+				<p style="background: #E94848" class="j_W"><a href="#" class="j_W">일</a></p>
+			</div>
+		</div>
+
+	<table style="float: left"> <!--웹툰-->
+		<tr>
+			<td><a href="http://webtoon.daum.net/webtoon/view/melancholy" class="j_toon"><img src="toon/1.png" class="j_webtoon"><br>
+			유색의 멜랑꼴리</a></td>
+			<td><a href="http://webtoon.daum.net/webtoon/view/monsterbutcher" class="j_toon"><img src="toon/2.png" class="j_webtoon"><br>
+			요괴백정</a></td>
+			<td><a href="http://webtoon.daum.net/webtoon/view/badluck" class="j_toon"><img src="toon/3.png" class="j_webtoon"><br>
+			악연</a></td>
+			<td><a href="http://webtoon.daum.net/webtoon/view/TimeofFuture" class="j_toon"><img src="toon/4.png" class="j_webtoon"><br>
+			미래의 시간(2016)</a></td>
+			<td rowspan="4" colspan="2">
+				<div>
+				<a href="#" class="j_ad">
+					<p class="j_ad_but" id="j_bg"><a href="#" class="j_back" onclick="j_back1();">&#10094;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="j_next" onclick="j_next1()">&#10095;</p>
+				</a>
+			</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td id="writer">비나리</td>
+			<td id="writer">좌서방</td>
+			<td id="writer">최희선</td>
+			<td id="writer">비둘기</td>
+		</tr>
+
+		<tr>
+			<td><a href="http://webtoon.daum.net/webtoon/view/whatasadlife" class="j_toon"><img src="toon/5.png" class="j_webtoon"><br>
+			슬프게도 이게</a></td>
+			<td><a href="#" class="j_toon" onclick="s_adultcheck()"><img src="toon/6.png" class="j_webtoon"><br>
+			<img src="s_web/adult.png" class="s_adult">&nbsp;달에 사는 사람들</a></td>
+			<td><a href="http://webtoon.daum.net/webtoon/view/tomboy" class="j_toon"><img src="toon/7.png" class="j_webtoon"><br>
+			말광량이</a></td>
+			<td><a href="http://webtoon.daum.net/webtoon/view/shell" class="j_toon"><img src="toon/8.png" class="j_webtoon"><br>
+			껍데기</a></td>
+		</tr>
+
+		<tr>
+			<td id="writer">슬</td>
+			<td id="writer">다원</td>
+			<td id="writer">비아이</td>
+			<td id="writer">김탐미</td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<td><a href="http://webtoon.daum.net/webtoon/view/favorite" class="j_toon"><img src="toon/9.png" class="j_webtoon"><br>
+			취향저격 그녀</a></td>
+			<td><a href="http://webtoon.daum.net/webtoon/view/daddyboy" class="j_toon"><img src="toon/10.png" class="j_webtoon"><br>
+			대디보이</a></td>
+			<td><a href="http://webtoon.daum.net/webtoon/view/PoetrySun" class="j_toon"><img src="toon/11.png" class="j_webtoon"><br>
+			태양의 시</a></td>
+			<td><a href="http://webtoon.daum.net/webtoon/view/BurningEffect" class="j_toon"><img src="toon/12.png" class="j_webtoon"><br>
+			버닝 이펙트</a></td>
+			<td><a href="#" class="j_toon" onclick="s_adultcheck()"><img src="toon/13.png" class="j_webtoon"><br>
+			<img src="s_web/adult.png" class="s_adult">&nbsp;이토록 보통의</a></td>
+			<td><a href="http://webtoon.daum.net/webtoon/view/ficnonfic" class="j_toon"><img src="toon/14.png" class="j_webtoon"><br>
+			퀴퀴한 일기</a></td>
+		</tr>
+
+		<tr>
+			<td id="writer">로즈옹</td>
+			<td id="writer">이록</td>
+			<td id="writer">목인</td>
+			<td id="writer">박태현</td>
+			<td id="writer">캐롯</td>
+			<td id="writer">2B</td>
+		</tr>
+
+		<tr>
+			<td><a href="http://webtoon.daum.net/webtoon/view/1punchTeacher" class="j_toon"><img src="toon/15.png" class="j_webtoon"><br>
+			대치동 일타강사</a></td>
+			<td><a href="http://webtoon.daum.net/webtoon/view/parody" class="j_toon"><img src="toon/16.png" class="j_webtoon"><br>
+			채널뽁스</a></td>
+		</tr>
+
+		<tr>
+			<td id="writer">JP You/송예슬</td>
+			<td id="writer">뽁스</td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<td colspan="6"><a href="https://www.tumblbug.com/ppozzatoonumbrella1"><img src="toon/adcat.jpg" class="j_adcat"></a></td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<td colspan="2"><img src="s_web/rankplus.png" class="s_rankplus"></td>
+			<td colspan="2"><img src="s_web/rankplus2.png" class="s_rankplus"></td>
+			<td colspan="2"><img src="s_web/ad.png" class="s_rankplus"></td>
+		</tr> 
+<!-- 햄스터와 그녀, 발자국이 녹기 전에 -->
+		<tr>
+			<td rowspan="3" class="s_plus"><img src="s_web/r1.png" class="s_plus"></td>
+			<td class="s_subject">공포, 스릴러, 스토커</td>
+			<td rowspan="3" class="s_plus"><img src="s_web/r6.png" class="s_plus"></td>
+			<td class="s_subject">드라마, 순정, 연애</td>
+			<td rowspan="9" colspan="2"><img src="s_web/adad.png" class="s_ad"><a href="https://teraclassic.kakaogame.com/?utm_campaign=pre_register&utm_medium=pc&utm_source=Kakaoad&utm_content=DA_01&utm_term=190709"></a></td>
+		</tr>
+		<tr>
+			<td class="s_title"><a href="http://webtoon.daum.net/webtoon/view/hamsterandher">햄스터와 그녀</a></td>
+			<td class="s_title"><a href="http://webtoon.daum.net/webtoon/view/BeforeWarm">발자국이 녹기 전에</a></td>
+		</tr> 
+		<tr><td class="s_writer">jaw</td><td class="s_writer">서결</td></tr>
+<!-- 풍검, 휴니멀 -->
+		<tr>
+			<td rowspan="3"><img src="s_web/r2.png" class="s_plus"></td>
+			<td class="s_subject">판타지, 액션, 동양</td>
+			<td rowspan="3"><img src="s_web/r7.png" class="s_plus"></td>
+			<td class="s_subject">판타지, 순정, 돌연변이</td>
+		</tr>
+		<tr>
+			<td class="s_title"><a href="http://webtoon.daum.net/webtoon/view/windsword">풍검</a></td>
+			<td class="s_title"><a href="http://webtoon.daum.net/webtoon/view/hunimal">휴니멀</a></td>
+		</tr> 
+		<tr><td class="s_writer">김철현</td><td class="s_writer">일링스</td></tr>
+<!-- 악역의 구원자, 그녀는 브이아이피 -->
+		<tr>
+			<td rowspan="3"><img src="s_web/r3.png" class="s_plus"></td>
+			<td class="s_subject">판타지, 순정, 집착</td>
+			<td rowspan="3"><img src="s_web/r8.png" class="s_plus"></td>
+			<td class="s_subject">순정, 드라마, 연애</td>
+		</tr>
+		<tr>
+			<td class="s_title"><a href="http://webtoon.daum.net/webtoon/view/savior">악역의 구원자</a></td>
+			<td class="s_title"><a href="http://webtoon.daum.net/webtoon/view/sheisvip">그녀는 VIP</a></td>
+		</tr> 
+		<tr><td class="s_writer">잿슨/명랑</td><td class="s_writer">이태경</td></tr>
+<!-- 주말도미시식회, 사랑스러운 복희씨 -->
+		<tr>
+			<td rowspan="3"><img src="s_web/r4.png" class="s_plus"></td>
+			<td class="s_subject">드라마, 액션, 격투</td>
+			<td rowspan="3"><img src="s_web/r9.png" class="s_plus"></td>
+			<td class="s_subject">순정, 드라마, 짝사랑</td>
+			<td rowspan="3" colspan="2"><a href="http://webtoon.daum.net/event#page_no=1&sort=event"><img src="s_web/event.png" class="s_adad"></a></td>
+		</tr>
+		<tr>
+			<td class="s_title"><a href="http://webtoon.daum.net/webtoon/view/weekendseabream">주말 도미 시식회</a></td>
+			<td class="s_title"><a href="http://webtoon.daum.net/webtoon/view/LovelyBokhee">사랑스러운 복희씨</a></td>
+		</tr> 
+		<tr><td class="s_writer">이용우</td><td class="s_writer">김인정</td></tr>
+<!-- 햄스터와 그녀, 발자국이 녹기 전에 -->
+		<tr>
+			<td rowspan="3"><img src="s_web/r5.png" class="s_plus"></td>		
+			<td class="s_subject">판타지, 순정, 집착</td>
+			<td rowspan="3"><img src="s_web/r10.png" class="s_plus"></td>	
+			<td class="s_subject">드라마, 가출, 방황</td>
+			<td rowspan="3" colspan="2"><a href="http://webtoon.daum.net/event#page_no=1&sort=collection"><img src="s_web/collection.png" class="s_adad"></a></td>
+		</tr>
+		<tr>
+			<td class="s_title"><a href="http://webtoon.daum.net/webtoon/view/heavencouple">천연 天緣</a></td>
+			<td class="s_title"><a href="http://webtoon.daum.net/webtoon/view/start">시동</a></td>
+		</tr> 
+		<tr><td class="s_writer">ALIC</td><td class="s_writer">조금산</td></tr>
+	</table>
+	<hr>
+	<br><br>
+	<table class="s_fontsize">
+		<tr><td><a href="http://webtoon.daum.net/bbs/notice/#page_no=1" class="s_red">Notice</td><td><a href="http://webtoon.daum.net/bbs/notice/view/1892" class="s_notice"><공모대전7> 접수 시 주의사항 및 FAQ</a></td><td class="s_grey">2019-06-03</td><td class="s_plusplus"><a href="http://webtoon.daum.net/bbs/notice/#page_no=1"><img src="s_web/plus.png" class="s_plusplus"></a></td></tr>
+	</table>
+	</div>
+
+	<div class="ad_fin">
+		<a href="https://www.tumblbug.com/ppozzatoonumbrella1"><img src="toon/down1.png" class="ad_fin_down"></a>
+		<div class="j_ad_menubox">
+			<a href="http://webtoon.daum.net/bbs/notice/view/1527"><p class="j_ad_menu">연재 및 유통문의</p></a>
+			<a href="http://webtoon.daum.net/business"><p class="j_ad_menu">사업제휴문의</p></a>
+			<a target="_blank" href="http://search.daum.net/search?w=tot&DA=UME&t__nil_searchbox=suggest&sug=&sq=%EB%8B%A4%EC%9D%8C+%EC%9B%B9%ED%88%B0%EC%95%B1&o=2&q=%EB%8B%A4%EC%9D%8C+%EC%9B%B9%ED%88%B0%EC%95%B1"><p class="j_ad_menu">앱 다운로드</p></a>
+		</div>
+		<div class="j_bottom_menu">
+			<ul class="j_bottom_menu">
+				<li><a target="_blank" href="http://policy.daum.net/info/info" class="j_menu_bot">서비스 약관/정책</a></li>
+				<li class="j_menu">&#8285;</li>
+				<li><a target="_blank" href="http://policy.daum.net/info_protection/info_protection" class="j_menu_bot">개인정보처리방침</a></li>on
+				<li class="j_menu">&#8285;</li>
+				<li><a target="_blank" href="https://cs.daum.net/redbell/top.html" class="j_menu_bot">관리침해신고</a></li>
+				<li class="j_menu">&#8285;</li>
+				<li><a target="_blank" href="https://cs.daum.net/faq/23.html" class="j_menu_bot">다음웹툰 고객센터</a></li>
+				<li class="j_menu">&#8285;</li>
+				<li><a href="http://webtoon.daum.net/order/service_terms" class="j_menu_bot">유료서비스 약관</a></li>
+			</ul>
+		</div>
+		<p class="copyright">Copyright &copy; <a href="thank.html" class="jssk"><strong>TooniverSu Crop</strong></a>. All rights reserved.</p>
+</div>
+</body>
+</html>
